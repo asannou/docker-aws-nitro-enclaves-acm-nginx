@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+  restart)
+    /vsock-proxy.sh &
+    ;;
+  show)
+    if [ -f /run/nginx.pid ]
+    then
+      echo "MainPID=$(cat /run/nginx.pid)"
+    else
+      echo 'MainPID=0'
+    fi
+    ;;
+  start)
+    /usr/sbin/nginx
+    ;;
+esac
+
