@@ -1,7 +1,6 @@
 FROM amazonlinux:2
 
-ENV ENCLAVE_CPU_COUNT=1 \
-    ENCLAVE_MEMORY_MIB=256 \
+ENV ENCLAVE_MEMORY_MIB=256 \
     ACM_CERTIFICATE_ARN=arn:aws:acm:region:account:certificate/certificate_ID
 
 RUN amazon-linux-extras enable aws-nitro-enclaves-cli nginx1 \
