@@ -1,4 +1,4 @@
-FROM amazonlinux:2@sha256:18cb47539d12030862eae4dde636241817535b01294ae689841a59774e2855db
+FROM amazonlinux:2@sha256:801fb398bf35efddb0f372d20d42a32a8dcdc828ff19486d3ef455969a5655f0
 
 ENV ENCLAVE_MEMORY_MIB=256 \
     ACM_CERTIFICATE_ARN=arn:aws:acm:region:account:certificate/certificate_ID
